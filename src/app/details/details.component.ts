@@ -8,9 +8,14 @@ import { ActivatedRoute } from "@angular/router";
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
-export class DetailsComponent implements OnInit {
 
-  constructor() { }
+export class DetailsComponent implements OnInit {
+	
+	user$: Object;
+
+  constructor(private route: ActivatedRoute, private data: DataService) { 
+    this.route.params.subscribe( params => this.user$ = params.id );
+  }
 
   ngOnInit() {
   }
