@@ -7,7 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { UsersComponent }   from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { PostsComponent }   from './posts/posts.component';
-import {HttpClientModule }  from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +15,12 @@ import {HttpClientModule }  from '@angular/common/http';
     SidebarComponent,
     UsersComponent,
     DetailsComponent,
-    PostsComponent,
-    HttpClientModule
+    PostsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
