@@ -4,9 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { UsersComponent } from './users/users.component';
+import { UsersComponent }   from './users/users.component';
 import { DetailsComponent } from './details/details.component';
-import { PostsComponent } from './posts/posts.component';
+import { PostsComponent }   from './posts/posts.component';
+import {HttpClientModule }  from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PostsComponent } from './posts/posts.component';
     SidebarComponent,
     UsersComponent,
     DetailsComponent,
-    PostsComponent
+    PostsComponent,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
